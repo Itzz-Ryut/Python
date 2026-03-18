@@ -130,3 +130,11 @@ def electricity_bill2(units):
  
 units2 = int(input("Enter units "))
 print(f"Total bill: ₹{electricity_bill2(units2):.2f}")
+
+# Question 14: Print all even numbers between 1 to N.
+# Input: Enter N
+# Output: Even numbers list
+n2 = int(input("Enter N: "))
+evens2 = list(range(2, n2 + 1, 2))
+print(f"Even numbers: {evens2}")
+
