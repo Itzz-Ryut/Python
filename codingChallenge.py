@@ -163,9 +163,22 @@ def calculate_bill3 (price, disc, is_member):
         final_price -= final_price*15/100
     
     return final_price
+
 price3 = float(input("Enter price: "))
 discount3 = float(input("Enter discount %: "))
 member = input("Are you a member? YES/NO ").lower()
 is_member = member == 'yes'
 final3 = calculate_bill3(price3, discount3, is_member)
 print("Final price: {final3}")
+
+# Question 17: Check whether a person is eligible to vote.
+# Input: Enter age
+# Output: Eligible / Not Eligible
+age1 = int(input("Enter ur age "))
+Nationality = input("Are you indian?  yes/no").lower()
+is_nationality = Nationality == 'yes'
+
+if age1 >= 18 & is_nationality:
+    print("Eligible")
+else:
+    print("Not Eligible")
