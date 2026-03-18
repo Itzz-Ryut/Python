@@ -63,8 +63,8 @@ print(f"Simple Interest: {si}")
 # Question 6: A shopkeeper wants to calculate total bill after discount.
 # Input: Enter price and discount percentage
 # Output: Final price after discount
-price = float(input("Q1 | Enter price: "))
-discount = float(input("Q1 | Enter discount %: "))
+price = float(input("Enter price: "))
+discount = float(input("Enter discount %: "))
 final = price - (price * discount / 100)
 print(f"Final price: {final}")
 
@@ -101,5 +101,9 @@ print("Even number list ", even_numbers1)
 principal1 = float(input("Enter Principal (P): "))
 rate1 = float(input("Enter Rate of Interest (R): "))
 time1 = float(input("Enter Time in years (T): "))
-si = (principal * rate * time) / 100
-print(f"Simple Interest: {si}")
+si1 = (principal1 * rate1 * time1) / 100
+print(f"Simple Interest: {si1}")
+
+# Question 11: A shopkeeper wants to calculate total bill after discount.
+# Input: Enter price and discount percentage
+# Output: Final price after discount
