@@ -90,9 +90,16 @@ print("Total bll units ", unit * 8)
 # Output: Even numbers list
 num1 = int(input("ENter N"))
 even_numbers1 =[]
-for i in range (1, num1 + 1):
+for i in range (1, num1):
     if i % 2 == 0:
         even_numbers1.append(i)
 print("Even number list ", even_numbers1)
 
-
+# Question 10: Create a function to calculate simple interest.
+# Input: Enter P, R, T
+# Output: Simple Interest
+principal1 = float(input("Enter Principal (P): "))
+rate1 = float(input("Enter Rate of Interest (R): "))
+time1 = float(input("Enter Time in years (T): "))
+si = (principal * rate * time) / 100
+print(f"Simple Interest: {si}")
