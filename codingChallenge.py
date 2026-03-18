@@ -59,3 +59,11 @@ rate = float(input("Enter Rate of Interest (R): "))
 time = float(input("Enter Time in years (T): "))
 si = simple_interest(principal, rate, time)
 print(f"Simple Interest: {si}")
+
+# Question 6: A shopkeeper wants to calculate total bill after discount.
+# Input: Enter price and discount percentage
+# Output: Final price after discount
+price = float(input("Q1 | Enter price: "))
+discount = float(input("Q1 | Enter discount %: "))
+final = price - (price * discount / 100)
+print(f"Final price: {final}")
