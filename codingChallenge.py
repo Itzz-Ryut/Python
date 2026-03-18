@@ -115,7 +115,18 @@ print(f"Final price: {final2}")
 # Question 12: Check whether a person is eligible to vote.
 # Input: Enter age
 # Output: Eligible / Not Eligible
-age2 = int(input("Q17 | Enter age: "))
+age2 = int(input("Enter age: "))
 result2 = "Eligible" if age2 >= 18 else "Not Eligible"
 print(result2)
 
+# Question 13: Calculate electricity bill based on units consumed.
+# Input: Enter units
+# Output: Total bill amount
+def electricity_bill2(units):
+    if units <= 100:
+        return units * 2.00
+    else:
+        return (100 * 2.00) + ((units - 100) * 4.00)
+ 
+units2 = int(input("Enter units "))
+print(f"Total bill: ₹{electricity_bill2(units2):.2f}")
