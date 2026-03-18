@@ -67,3 +67,12 @@ price = float(input("Q1 | Enter price: "))
 discount = float(input("Q1 | Enter discount %: "))
 final = price - (price * discount / 100)
 print(f"Final price: {final}")
+
+# Question 7: Check whether a person is eligible to vote.
+# Input: Enter age
+# Output: Eligible / Not Eligible
+age = int(input("Enter ur age "))
+if age >= 18 :
+    print("Eligible")
+else:
+    print("Not Eligible")
