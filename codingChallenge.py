@@ -102,7 +102,7 @@ principal1 = float(input("Enter Principal (P): "))
 rate1 = float(input("Enter Rate of Interest (R): "))
 time1 = float(input("Enter Time in years (T): "))
 si1 = (principal1 * rate1 * time1) / 100
-print(f"Simple Interest: {si1}")
+print("Simple Interest: {si1}")
 
 # Question 11: A shopkeeper wants to calculate total bill after discount.
 # Input: Enter price and discount percentage
@@ -110,7 +110,7 @@ print(f"Simple Interest: {si1}")
 price2 = float(input("Enter price: "))
 discount2 = float(input("Enter discount %: "))
 final2 = round(price2 - (price2 * discount2 / 100))
-print(f"Final price: {final2}")
+print("Final price: {final2}")
 
 # Question 12: Check whether a person is eligible to vote.
 # Input: Enter age
@@ -138,3 +138,16 @@ n2 = int(input("Enter N: "))
 evens2 = list(range(2, n2 + 1, 2))
 print(f"Even numbers: {evens2}")
 
+# Question 15: Create a function to calculate simple interest.
+# Input: Enter P, R, T
+# Output: Simple Interest
+def si2(p, r, t):
+    si = (p * r * t) / 100
+    total = p + si
+    return si, total
+ 
+p2 = float(input("Q15 | Enter P: "))
+r2 = float(input("Q15 | Enter R: "))
+t2 = float(input("Q15 | Enter T: "))
+si2, total2 = si2(p2, r2, t2)
+print(f"Simple Interest: {si2}  |  Total Amount: {total2}")
