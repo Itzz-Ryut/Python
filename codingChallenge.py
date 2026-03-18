@@ -71,8 +71,28 @@ print(f"Final price: {final}")
 # Question 7: Check whether a person is eligible to vote.
 # Input: Enter age
 # Output: Eligible / Not Eligible
-age = int(input("Enter ur age "))
-if age >= 18 :
+age1 = int(input("Enter ur age "))
+if age1 >= 18 :
     print("Eligible")
 else:
     print("Not Eligible")
+
+
+# Question 8: Calculate electricity bill based on units consumed.
+# Input: Enter units
+# Output: Total bill amount
+unit = float(input("Enter Units "))
+print("Total bll units ", unit * 8)
+
+
+# Question 9: Print all even numbers between 1 to N.
+# Input: Enter N
+# Output: Even numbers list
+num1 = int(input("ENter N"))
+even_numbers1 =[]
+for i in range (1, num1 + 1):
+    if i % 2 == 0:
+        even_numbers1.append(i)
+print("Even number list ", even_numbers1)
+
+
