@@ -107,3 +107,15 @@ print(f"Simple Interest: {si1}")
 # Question 11: A shopkeeper wants to calculate total bill after discount.
 # Input: Enter price and discount percentage
 # Output: Final price after discount
+price2 = float(input("Enter price: "))
+discount2 = float(input("Enter discount %: "))
+final2 = round(price2 - (price2 * discount2 / 100))
+print(f"Final price: {final2}")
+
+# Question 12: Check whether a person is eligible to vote.
+# Input: Enter age
+# Output: Eligible / Not Eligible
+age2 = int(input("Q17 | Enter age: "))
+result2 = "Eligible" if age2 >= 18 else "Not Eligible"
+print(result2)
+
