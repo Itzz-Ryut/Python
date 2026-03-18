@@ -14,13 +14,11 @@ print(f"Final price after discount: {final}")
 # Question 2: Check whether a person is eligible to vote.
 # Input: Enter age
 # Output: Eligible / Not Eligible
-def verifyAge(age):
-    if age > 18:
-        return True
-    False
+def verify_age(age):
+        return age >= 18
 
 age = int(input("Enter age: "))
-verify = verifyAge(age)
+verify = verify_age(age)
 if verify:
     print("Eligible")
 else:
@@ -29,17 +27,17 @@ else:
 # Question 3: Calculate electricity bill based on units consumed.
 # Input: Enter units
 # Output: Total bill amount
-def electricityBill(n):
+def electricity_bill(n):
     costs = n * 8
     return costs
 
 unit = int(input("Enter units: "))
-print("Total bill amount: ", electricityBill(unit))
+print("Total bill amount: ", electricity_bill(unit))
 
 # Question 4: Print all even numbers between 1 to N.
 # Input: Enter N
 # Output: Even numbers list
-def evenNum(n):
+def even_num(n):
     evenNumber = []
     for i in range(1, n+1):
         if i  % 2 == 0:
@@ -47,4 +45,17 @@ def evenNum(n):
     return evenNumber
 
 num = int(input("Enter N "))
-print("Even number list ", evenNum(num))
+print("Even number list ", even_num(num))
+
+# Question 5: Create a function to calculate simple interest.
+# Input: Enter P, R, T
+# Output: Simple Interest
+def simple_interest(principal, rate, time):
+    si = (principal * rate * time) / 100
+    return si
+ 
+principal = float(input("Enter Principal (P): "))
+rate = float(input("Enter Rate of Interest (R): "))
+time = float(input("Enter Time in years (T): "))
+si = simple_interest(principal, rate, time)
+print(f"Simple Interest: {si}")
